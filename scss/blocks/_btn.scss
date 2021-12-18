@@ -1,0 +1,26 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-decoration: none;
+
+    padding: 8px 18px;
+    
+    color: #FFFFFF;
+
+    min-width: 130px;
+    &--green {
+        background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+        border-radius: 22px;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}

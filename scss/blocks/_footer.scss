@@ -1,0 +1,89 @@
+.footer {
+    background: #2D314D;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+        &__social {
+            display: flex;
+            flex-direction: column;
+            & > img {
+                width: 140px;
+                height: 20px;
+            }
+            &__item {
+                display: flex;
+                justify-content: space-between;
+                margin-top: auto;
+            }
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            &__list {
+                list-style: none;
+            }
+            &__item {
+                font-size: 15px;
+                line-height: 26px;
+                
+                letter-spacing: -0.234375px;
+                color: #FFFFFF;
+                padding: 10px 0;
+                &:hover {
+                    color: #67cea8;
+                }
+                &:active {
+                    color: #30C88F;
+                }
+            }
+        }
+        &__request {
+            display: flex;
+            flex-direction: column;
+            & > p {
+                font-size: 15px;
+                line-height: 26px;
+                
+                text-align: right;
+                letter-spacing: -0.234375px;
+                
+                color: #FFFFFF;
+                margin-top: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 726px) {
+    .footer {
+        &__block {
+            flex-direction: column;
+            &__social {
+                align-items: center;
+                &__item {
+                    margin-top: 35px;
+                    width: 180px;
+                }
+            }
+            .menu {
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+            }
+            &__request {
+                align-items: center;
+                margin-top: 30px;
+                & > a {
+                    width: 160px;
+                }
+                & > p {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

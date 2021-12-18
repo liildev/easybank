@@ -1,0 +1,97 @@
+.choose {
+    background: #F4F5F7;
+
+    &__content {
+        padding-top: 100px;
+
+        & > h2 {
+            font-weight: 100;
+            font-size: 40px;
+            line-height: 64px;
+            
+            letter-spacing: -0.714286px;
+            
+            color: #2D314D;
+        }
+    
+        & > p {
+            font-size: 18px;
+            line-height: 28px;
+            
+            letter-spacing: -0.28125px;
+            
+            color: #9597A5;
+    
+            width: 600px;
+        }
+        &__block {
+            margin-top: 70px;
+            display: flex;
+            justify-content: space-between;
+            &__item {
+                width: 250px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                & > img {
+                    height: 70px;
+                    width: 70px;
+                }
+                & > h3 {
+                    margin-top: 40px;
+                    font-weight: 100;
+                    font-size: 24px;
+                    line-height: 28px;
+                    
+                    letter-spacing: -0.428571px;
+                    
+                    color: #2D314D;
+                }
+                & > p {
+                    font-size: 16px;
+                    line-height: 26px;
+                    
+                    letter-spacing: -0.25px;
+                    
+                    color: #9597A5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 726px) {
+    .choose {
+        &__content {
+            & > h2 {
+                text-align: center;
+            }
+        
+            & > p {
+                text-align: center;
+                width: 100%;
+                padding: 0 70px;
+            }
+            &__block {
+                margin-top: 70px;
+                display: flex;
+                justify-content: 
+                space-between;
+                flex-direction: column;
+                &__item {
+                    width: 100%;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                    & > h3 {
+                        text-align: center;
+                    }
+                    & > p {
+                        text-align: center;
+                        padding: 0 70px;
+                    }
+                }
+            }
+        }
+    }
+}
